@@ -1,0 +1,37 @@
+version: "2"
+services:
+
+  landing:
+    image: linancn/tiangong-landing:latest
+    restart: unless-stopped
+    environment:
+      VIRTUAL_HOST: www.tiangong.earth,tiangong.earth
+      VIRTUAL_PORT: 8000
+      LETSENCRYPT_HOST: www.tiangong.earth,tiangong.earth
+      LETSENCRYPT_EMAIL: linanenv@gmail.com
+
+  nginx-proxy:
+    restart: always
+    depends_on:
+      - landing
+    image: nginxproxy/nginx-proxy
+    container_name: nginx-proxy
+    ports:
+      - "443:443"
+      - "80:80"
+    volumes:
+      - ./nginx/html:/usr/share/nginx/html
+      - ./certs:/etc/nginx/certs
+      - ./vhost:/etc/nginx/vhost.d
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+
+  nginx-proxy-acme:
+    restart: always
+    depends_on:
+      - nginx-proxy
+    image: nginxproxy/acme-companion
+    container_name: nginx-proxy-acme
+    volumes_from:
+      - nginx-proxy
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
