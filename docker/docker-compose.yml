@@ -10,10 +10,20 @@ services:
       LETSENCRYPT_HOST: www.tiangong.earth,tiangong.earth
       LETSENCRYPT_EMAIL: linanenv@gmail.com
 
+  landing-cn:
+    image: linancn/tiangong-landing-cn:latest
+    restart: unless-stopped
+    environment:
+      VIRTUAL_HOST: cn.tiangong.earth
+      VIRTUAL_PORT: 8000
+      LETSENCRYPT_HOST: cn.tiangong.earth
+      LETSENCRYPT_EMAIL: linanenv@gmail.com
+
   nginx-proxy:
     restart: always
     depends_on:
       - landing
+      - landing-cn
     image: nginxproxy/nginx-proxy
     container_name: nginx-proxy
     ports:
