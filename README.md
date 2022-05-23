@@ -35,3 +35,11 @@ yarn start
 ```bash
 yarn build
 ```
+
+### Build project
+
+Docker compose up in server
+
+```bash
+docker compose up -d
+```
