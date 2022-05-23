@@ -1,20 +1,32 @@
 import React from 'react';
-export const Nav00DataSource = {
-  wrapper: { className: 'header0 home-page-wrapper' },
+export const Nav30DataSource = {
+  wrapper: { className: 'header3 home-page-wrapper l3iqeebvwj-editor_css' },
   page: { className: 'home-page' },
   logo: {
-    className: 'header0-logo',
-    children: 'https://os.alipayobjects.com/rmsportal/mlcYmsRilwraoAe.svg',
+    className: 'header3-logo',
+    children:
+      'https://tian-gong-initiative-open.oss-cn-shenzhen.aliyuncs.com/image/logo/23.png',
   },
   Menu: {
-    className: 'header0-menu',
+    className: 'header3-menu',
     children: [
       {
         name: 'item0',
-        className: 'header0-item',
+        className: 'header3-item',
         children: {
           href: '#',
-          children: [{ children: '导航一', name: 'text' }],
+          children: [
+            {
+              children: (
+                <span>
+                  <span>
+                    <p>下载</p>
+                  </span>
+                </span>
+              ),
+              name: 'text',
+            },
+          ],
         },
         subItem: [
           {
@@ -71,63 +83,464 @@ export const Nav00DataSource = {
       },
       {
         name: 'item1',
-        className: 'header0-item',
+        className: 'header3-item',
         children: {
           href: '#',
-          children: [{ children: '导航二', name: 'text' }],
+          children: [
+            {
+              children: (
+                <span>
+                  <p>知识中心</p>
+                </span>
+              ),
+              name: 'text',
+            },
+          ],
         },
       },
       {
         name: 'item2',
-        className: 'header0-item',
+        className: 'header3-item',
         children: {
           href: '#',
-          children: [{ children: '导航三', name: 'text' }],
-        },
-      },
-      {
-        name: 'item3',
-        className: 'header0-item',
-        children: {
-          href: '#',
-          children: [{ children: '导航四', name: 'text' }],
+          children: [
+            {
+              children: (
+                <span>
+                  <span>
+                    <p>联系我们</p>
+                  </span>
+                </span>
+              ),
+              name: 'text',
+            },
+          ],
         },
       },
     ],
   },
-  mobileMenu: { className: 'header0-mobile-menu' },
+  mobileMenu: { className: 'header3-mobile-menu' },
 };
-export const Banner00DataSource = {
-  wrapper: { className: 'banner0' },
-  textWrapper: { className: 'banner0-text-wrapper' },
-  title: {
-    className: 'banner0-title',
-    children: 'https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png',
+export const Banner50DataSource = {
+  wrapper: { className: 'home-page-wrapper banner5 l3ikv7kgzc-editor_css' },
+  page: { className: 'home-page banner5-page l3il5k22q9-editor_css' },
+  childWrapper: {
+    className: 'banner5-title-wrapper',
+    children: [
+      {
+        name: 'title',
+        children: (
+          <span>
+            <span>
+              <span>
+                <p>天工计划</p>
+              </span>
+            </span>
+          </span>
+        ),
+        className: 'banner5-title l3iks7eq51m-editor_css',
+      },
+      {
+        name: 'explain',
+        className: 'banner5-explain l3iksjxnysn-editor_css',
+        children: (
+          <span>
+            <span>
+              <span>
+                <span>
+                  <span>
+                    <span>
+                      <span>
+                        <span>
+                          <span>
+                            <span>
+                              <p>
+                                致力于建立开放开源的生命周期评价数据、软件、门户、社区知识平台
+                              </p>
+                              <p>
+                                <span>
+                                  旨在助力中国实现“双碳”承诺，系统性解决人类世的环境问题
+                                </span>
+                              </p>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </span>
+          </span>
+        ),
+      },
+    ],
   },
-  content: {
-    className: 'banner0-content',
-    children: '一个高效的页面动画解决方案',
+  image: {
+    className: 'banner5-image l3ikrczx4i-editor_css',
+    children:
+      'https://tian-gong-initiative-open.oss-cn-shenzhen.aliyuncs.com/image/logo/24.png',
   },
-  button: { className: 'banner0-button', children: 'Learn More' },
 };
-export const Content00DataSource = {
+export const Feature70DataSource = {
+  wrapper: {
+    className: 'home-page-wrapper feature7-wrapper l3ipeer48fg-editor_css',
+  },
+  page: { className: 'home-page feature7' },
+  OverPack: { playScale: 0.3 },
+  titleWrapper: {
+    className: 'feature7-title-wrapper',
+    children: [
+      {
+        name: 'title',
+        className: 'feature7-title-h1 l3ipdt38dri-editor_css',
+        children: (
+          <span>
+            <p>天工LCA数据库</p>
+          </span>
+        ),
+      },
+      {
+        name: 'content',
+        className: 'feature7-title-content l3ipeax48me-editor_css',
+        children: (
+          <span>
+            <span>
+              <p>
+                开放、经过同行评议、覆盖全行业单元过程的生命周期评价基础数据库
+              </p>
+            </span>
+          </span>
+        ),
+      },
+    ],
+  },
+  blockWrapper: {
+    className: 'feature7-block-wrapper',
+    gutter: 24,
+    children: [
+      {
+        md: 6,
+        xs: 24,
+        name: 'block0',
+        className: 'feature7-block',
+        children: {
+          className: 'feature7-block-group',
+          children: [
+            {
+              name: 'image',
+              className: 'feature7-block-image',
+              children:
+                'https://gw.alipayobjects.com/zos/basement_prod/e339fc34-b022-4cde-9607-675ca9e05231.svg',
+            },
+            {
+              name: 'title',
+              className: 'feature7-block-title l3ipfixsch-editor_css',
+              children: (
+                <span>
+                  <p>多种途径</p>
+                </span>
+              ),
+            },
+            {
+              name: 'content',
+              className: 'feature7-block-content',
+              children: (
+                <span>
+                  <p>全面覆盖数据来源</p>
+                </span>
+              ),
+            },
+          ],
+        },
+      },
+      {
+        md: 6,
+        xs: 24,
+        name: 'block1',
+        className: 'feature7-block',
+        children: {
+          className: 'feature7-block-group',
+          children: [
+            {
+              name: 'image',
+              className: 'feature7-block-image',
+              children:
+                'https://gw.alipayobjects.com/zos/basement_prod/e339fc34-b022-4cde-9607-675ca9e05231.svg',
+            },
+            {
+              name: 'title',
+              className: 'feature7-block-title l3ipgznqxx-editor_css',
+              children: (
+                <span>
+                  <p>统一设计标准</p>
+                </span>
+              ),
+            },
+            {
+              name: 'content',
+              className: 'feature7-block-content',
+              children: (
+                <span>
+                  <p>保证metadata一致性</p>
+                </span>
+              ),
+            },
+          ],
+        },
+      },
+      {
+        md: 6,
+        xs: 24,
+        name: 'block2',
+        className: 'feature7-block',
+        children: {
+          className: 'feature7-block-group',
+          children: [
+            {
+              name: 'image',
+              className: 'feature7-block-image',
+              children:
+                'https://gw.alipayobjects.com/zos/basement_prod/e339fc34-b022-4cde-9607-675ca9e05231.svg',
+            },
+            {
+              name: 'title',
+              className: 'feature7-block-title l3ipgw3j0w-editor_css',
+              children: (
+                <span>
+                  <p>完全开放</p>
+                </span>
+              ),
+            },
+            {
+              name: 'content',
+              className: 'feature7-block-content',
+              children: (
+                <span>
+                  <p>欢迎所有数据对接与集成</p>
+                </span>
+              ),
+            },
+          ],
+        },
+      },
+      {
+        md: 6,
+        xs: 24,
+        name: 'block3',
+        className: 'feature7-block',
+        children: {
+          className: 'feature7-block-group',
+          children: [
+            {
+              name: 'image',
+              className: 'feature7-block-image',
+              children:
+                'https://gw.alipayobjects.com/zos/basement_prod/e339fc34-b022-4cde-9607-675ca9e05231.svg',
+            },
+            {
+              name: 'title',
+              className: 'feature7-block-title l3ipjfc2wk-editor_css',
+              children: (
+                <span>
+                  <p>工具开源</p>
+                </span>
+              ),
+            },
+            {
+              name: 'content',
+              className: 'feature7-block-content',
+              children: (
+                <span>
+                  <p>数据库集成于开源的天工LCA软件</p>
+                </span>
+              ),
+            },
+          ],
+        },
+      },
+      {
+        md: 6,
+        xs: 24,
+        name: 'block4',
+        className: 'feature7-block',
+        children: {
+          className: 'feature7-block-group',
+          children: [
+            {
+              name: 'image',
+              className: 'feature7-block-image',
+              children:
+                'https://gw.alipayobjects.com/zos/basement_prod/e339fc34-b022-4cde-9607-675ca9e05231.svg',
+            },
+            {
+              name: 'title',
+              className: 'feature7-block-title l3ipk3hh4cb-editor_css',
+              children: (
+                <span>
+                  <p>同行评议</p>
+                </span>
+              ),
+            },
+            {
+              name: 'content',
+              className: 'feature7-block-content',
+              children: (
+                <span>
+                  <p>认证数据科学性与有效性</p>
+                </span>
+              ),
+            },
+          ],
+        },
+      },
+      {
+        md: 6,
+        xs: 24,
+        name: 'block5',
+        className: 'feature7-block',
+        children: {
+          className: 'feature7-block-group',
+          children: [
+            {
+              name: 'image',
+              className: 'feature7-block-image',
+              children:
+                'https://gw.alipayobjects.com/zos/basement_prod/e339fc34-b022-4cde-9607-675ca9e05231.svg',
+            },
+            {
+              name: 'title',
+              className: 'feature7-block-title',
+              children: (
+                <span>
+                  <span>
+                    <p>...</p>
+                  </span>
+                </span>
+              ),
+            },
+            {
+              name: 'content',
+              className: 'feature7-block-content',
+              children: (
+                <span>
+                  <p>....</p>
+                </span>
+              ),
+            },
+          ],
+        },
+      },
+      {
+        md: 6,
+        xs: 24,
+        name: 'block6',
+        className: 'feature7-block',
+        children: {
+          className: 'feature7-block-group',
+          children: [
+            {
+              name: 'image',
+              className: 'feature7-block-image',
+              children:
+                'https://gw.alipayobjects.com/zos/basement_prod/e339fc34-b022-4cde-9607-675ca9e05231.svg',
+            },
+            {
+              name: 'title',
+              className: 'feature7-block-title',
+              children: (
+                <span>
+                  <p>...</p>
+                </span>
+              ),
+            },
+            {
+              name: 'content',
+              className: 'feature7-block-content',
+              children: (
+                <span>
+                  <p>...</p>
+                </span>
+              ),
+            },
+          ],
+        },
+      },
+      {
+        md: 6,
+        xs: 24,
+        name: 'block7',
+        className: 'feature7-block',
+        children: {
+          className: 'feature7-block-group',
+          children: [
+            {
+              name: 'image',
+              className: 'feature7-block-image',
+              children:
+                'https://gw.alipayobjects.com/zos/basement_prod/e339fc34-b022-4cde-9607-675ca9e05231.svg',
+            },
+            {
+              name: 'title',
+              className: 'feature7-block-title',
+              children: (
+                <span>
+                  <p>...</p>
+                </span>
+              ),
+            },
+            {
+              name: 'content',
+              className: 'feature7-block-content',
+              children: (
+                <span>
+                  <p>...</p>
+                </span>
+              ),
+            },
+          ],
+        },
+      },
+    ],
+  },
+};
+export const Feature01DataSource = {
   wrapper: { className: 'home-page-wrapper content0-wrapper' },
   page: { className: 'home-page content0' },
   OverPack: { playScale: 0.3, className: '' },
   titleWrapper: {
     className: 'title-wrapper',
-    children: [{ name: 'title', children: '产品与服务' }],
+    children: [
+      {
+        name: 'title',
+        children: (
+          <span>
+            <p>天工LCASuite软件</p>
+          </span>
+        ),
+        className: 'l3ipnvyg4uo-editor_css',
+      },
+      {
+        name: 'content~l3ipqr7u6ko',
+        className: 'l3ipqsg5cu-editor_css',
+        children: (
+          <span>
+            <p>开源、免费、持续迭代的LCA软件</p>
+          </span>
+        ),
+      },
+    ],
   },
   childWrapper: {
     className: 'content0-block-wrapper',
     children: [
       {
         name: 'block0',
-        className: 'content0-block',
+        className: 'content0-block l3ipso8a8ia-editor_css',
         md: 8,
         xs: 24,
         children: {
-          className: 'content0-block-item',
+          className: 'content0-block-item l3iq57ano8-editor_css',
           children: [
             {
               name: 'image',
@@ -137,16 +550,34 @@ export const Content00DataSource = {
             },
             {
               name: 'title',
-              className: 'content0-block-title',
-              children: '一站式业务接入',
+              className: 'content0-block-title l3ipu4pr2qq-editor_css',
+              children: (
+                <span>
+                  <span>
+                    <span>
+                      <p>天工LCA: 生命周期评价工具</p>
+                    </span>
+                  </span>
+                </span>
+              ),
             },
-            { name: 'content', children: '支付、结算、核算接入产品效率翻四倍' },
+            {
+              name: 'content',
+              children: (
+                <span>
+                  <p>全面支持专业LCA</p>
+                  <p>AI赋能的“所见即所得“建模过程</p>
+                  <p>数据校验确保真实可信</p>
+                  <p>全流程可溯源、可验证</p>
+                </span>
+              ),
+            },
           ],
         },
       },
       {
         name: 'block1',
-        className: 'content0-block',
+        className: 'content0-block l3iq0fq04hp-editor_css',
         md: 8,
         xs: 24,
         children: {
@@ -160,19 +591,34 @@ export const Content00DataSource = {
             },
             {
               name: 'title',
-              className: 'content0-block-title',
-              children: '一站式事中风险监控',
+              className: 'content0-block-title l3ipu1177cu-editor_css',
+              children: (
+                <span>
+                  <span>
+                    <span>
+                      <p>天工Footprint: 碳足迹计算工具</p>
+                    </span>
+                  </span>
+                </span>
+              ),
             },
             {
               name: 'content',
-              children: '在所有需求配置环节事前风险控制和质量控制能力',
+              children: (
+                <span>
+                  <p>产品碳足迹快速计算与披露</p>
+                  <p>行业碳足迹基准</p>
+                  <p>低碳产品认证</p>
+                  <p>引导低碳生产和消费</p>
+                </span>
+              ),
             },
           ],
         },
       },
       {
         name: 'block2',
-        className: 'content0-block',
+        className: 'content0-block l3iq0iewlnb-editor_css',
         md: 8,
         xs: 24,
         children: {
@@ -186,12 +632,59 @@ export const Content00DataSource = {
             },
             {
               name: 'title',
-              className: 'content0-block-title',
-              children: '一站式数据运营',
+              className: 'content0-block-title l3ipx83wtuu-editor_css',
+              children: (
+                <span>
+                  <p>天工Design: 产品生态设计工具</p>
+                </span>
+              ),
             },
             {
               name: 'content',
-              children: '沉淀产品接入效率和运营小二工作效率数据',
+              children: (
+                <span>
+                  <p>将LCA前置，在R&amp;D阶段开展生态设计</p>
+                  <p>将碳足迹与其他环境足迹纳入设计考量</p>
+                  <p>AI赋能的辅助设计</p>
+                </span>
+              ),
+            },
+          ],
+        },
+      },
+      {
+        name: 'block~l3ipq5ohp9d',
+        className: 'content0-block l3iq0kww4j-editor_css',
+        md: 8,
+        xs: 24,
+        children: {
+          className: 'content0-block-item',
+          children: [
+            {
+              name: 'image',
+              className: 'content0-block-icon',
+              children:
+                'https://zos.alipayobjects.com/rmsportal/EkXWVvAaFJKCzhMmQYiX.png',
+            },
+            {
+              name: 'title',
+              className: 'content0-block-title l3ipyncixxc-editor_css',
+              children: (
+                <span>
+                  <p>天工Cloud: 企业环境管理工具</p>
+                </span>
+              ),
+            },
+            {
+              name: 'content',
+              children: (
+                <span>
+                  <p>与企业ERP及工业互联网深度融合</p>
+                  <p>打通数据获取、计算建模、报表分析流程</p>
+                  <p>ESG服务链接绿色金融</p>
+                  <p>符合国际标准的EPD/PEF报告</p>
+                </span>
+              ),
             },
           ],
         },
@@ -199,176 +692,112 @@ export const Content00DataSource = {
     ],
   },
 };
-export const Content10DataSource = {
-  wrapper: { className: 'home-page-wrapper content1-wrapper' },
-  OverPack: { className: 'home-page content1', playScale: 0.3 },
-  imgWrapper: { className: 'content1-img', md: 10, xs: 24 },
-  img: {
-    children: 'https://zos.alipayobjects.com/rmsportal/nLzbeGQLPyBJoli.png',
-  },
-  textWrapper: { className: 'content1-text', md: 14, xs: 24 },
-  title: { className: 'content1-title', children: '企业资源管理' },
-  content: {
-    className: 'content1-content',
-    children:
-      '云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。',
-  },
-};
-export const Content30DataSource = {
-  wrapper: { className: 'home-page-wrapper content3-wrapper' },
-  page: { className: 'home-page content3' },
-  OverPack: { playScale: 0.3 },
+export const Content120DataSource = {
+  wrapper: { className: 'home-page-wrapper content12-wrapper' },
+  page: { className: 'home-page content12' },
+  OverPack: { playScale: 0.3, className: '' },
   titleWrapper: {
     className: 'title-wrapper',
     children: [
       {
-        name: 'title',
-        children: '蚂蚁金融云提供专业的服务',
-        className: 'title-h1',
+        name: 'image',
+        children:
+          'https://gw.alipayobjects.com/zos/rmsportal/PiqyziYmvbgAudYfhuBr.svg',
+        className: 'title-image',
       },
       {
-        name: 'content',
-        className: 'title-content',
-        children: '基于阿里云强大的基础资源',
+        name: 'title',
+        children: (
+          <span>
+            <p>发起单位</p>
+          </span>
+        ),
+        className: 'title-h1 l3iqn8xhojf-editor_css',
       },
     ],
   },
   block: {
-    className: 'content3-block-wrapper',
+    className: 'img-wrapper',
     children: [
       {
         name: 'block0',
-        className: 'content3-block',
+        className: 'block',
         md: 8,
         xs: 24,
         children: {
-          icon: {
-            className: 'content3-icon',
+          wrapper: { className: 'block-content' },
+          img: {
             children:
-              'https://zos.alipayobjects.com/rmsportal/ScHBSdwpTkAHZkJ.png',
-          },
-          textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '企业资源管理' },
-          content: {
-            className: 'content3-content',
-            children:
-              '云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。',
+              'https://tian-gong-initiative-open.oss-cn-shenzhen.aliyuncs.com/image/logo/23.png',
+            className: 'l3iqk9u4c8g-editor_css',
           },
         },
       },
       {
         name: 'block1',
-        className: 'content3-block',
+        className: 'block',
         md: 8,
         xs: 24,
         children: {
-          icon: {
-            className: 'content3-icon',
+          wrapper: { className: 'block-content' },
+          img: {
             children:
-              'https://zos.alipayobjects.com/rmsportal/NKBELAOuuKbofDD.png',
-          },
-          textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '云安全' },
-          content: {
-            className: 'content3-content',
-            children:
-              '按金融企业安全要求打造的完整云上安全体系，全方位保障金融应用及数据安全。',
+              'https://tian-gong-initiative-open.oss-cn-shenzhen.aliyuncs.com/image/logo/23.png',
           },
         },
       },
       {
         name: 'block2',
-        className: 'content3-block',
+        className: 'block',
         md: 8,
         xs: 24,
         children: {
-          icon: {
-            className: 'content3-icon',
+          wrapper: { className: 'block-content' },
+          img: {
             children:
-              'https://zos.alipayobjects.com/rmsportal/xMSBjgxBhKfyMWX.png',
-          },
-          textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '云监控' },
-          content: {
-            className: 'content3-content',
-            children:
-              '分布式云环境集中监控，统一资源及应用状态视图，智能分析及故障定位。',
+              'https://tian-gong-initiative-open.oss-cn-shenzhen.aliyuncs.com/image/logo/23.png',
           },
         },
       },
       {
         name: 'block3',
-        className: 'content3-block',
+        className: 'block',
         md: 8,
         xs: 24,
         children: {
-          icon: {
-            className: 'content3-icon',
+          wrapper: { className: 'block-content' },
+          img: {
             children:
-              'https://zos.alipayobjects.com/rmsportal/MNdlBNhmDBLuzqp.png',
-          },
-          textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '移动' },
-          content: {
-            className: 'content3-content',
-            children:
-              '一站式移动金融APP开发及全面监控；丰富可用组件，动态发布和故障热修复。',
+              'https://tian-gong-initiative-open.oss-cn-shenzhen.aliyuncs.com/image/logo/23.png',
           },
         },
       },
       {
         name: 'block4',
-        className: 'content3-block',
+        className: 'block',
         md: 8,
         xs: 24,
         children: {
-          icon: {
-            className: 'content3-icon',
+          wrapper: { className: 'block-content' },
+          img: {
             children:
-              'https://zos.alipayobjects.com/rmsportal/UsUmoBRyLvkIQeO.png',
-          },
-          textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '分布式中间件' },
-          content: {
-            className: 'content3-content',
-            children:
-              '金融级联机交易处理中间件，大规模分布式计算机，数万笔/秒级并发能力，严格保证交易数据统一性。',
+              'https://tian-gong-initiative-open.oss-cn-shenzhen.aliyuncs.com/image/logo/23.png',
           },
         },
       },
       {
         name: 'block5',
-        className: 'content3-block',
+        className: 'block',
         md: 8,
         xs: 24,
         children: {
-          icon: {
-            className: 'content3-icon',
+          wrapper: { className: 'block-content' },
+          img: {
             children:
-              'https://zos.alipayobjects.com/rmsportal/ipwaQLBLflRfUrg.png',
-          },
-          textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '大数据' },
-          content: {
-            className: 'content3-content',
-            children:
-              '一站式、全周期大数据协同工作平台，PB级数据处理、毫秒级数据分析工具。',
+              'https://tian-gong-initiative-open.oss-cn-shenzhen.aliyuncs.com/image/logo/23.png',
           },
         },
       },
     ],
-  },
-};
-export const Footer00DataSource = {
-  wrapper: { className: 'home-page-wrapper footer0-wrapper' },
-  OverPack: { className: 'home-page footer0', playScale: 0.05 },
-  copyright: {
-    className: 'copyright',
-    children: (
-      <span>
-        ©2018 <a href="https://motion.ant.design">Ant Motion</a> All Rights
-        Reserved
-      </span>
-    ),
   },
 };
