@@ -1,4 +1,4 @@
-# Tiangong Landing
+# Tiangong Landing [![Build](https://github.com/linancn/TiangongLanding/actions/workflows/build.yml/badge.svg)](https://github.com/linancn/TiangongLanding/actions/workflows/build.yml) [![Docker Publish](https://github.com/linancn/TiangongLanding/actions/workflows/publish.yml/badge.svg)](https://github.com/linancn/TiangongLanding/actions/workflows/publish.yml)
 
 Landing page of Tiangong Initiative
 
@@ -36,7 +36,7 @@ yarn start
 yarn build
 ```
 
-### Build project
+### Publish project
 
 Docker compose up in server
 
